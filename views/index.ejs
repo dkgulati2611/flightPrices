@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flight Rates</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Flight Rates</h1>
+    <form action="/rates" method="post">
+      <label for="source">Source:</label>
+      <input type="text" id="source" name="Source" required />
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="Destination" required/>
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date" required />
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flight Rates</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Flight Rates</h1>
+    <% if (prices.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Airline</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i < prices.length; i++) { %>
+        <tr>
+          <td><%= prices[i].airline %></td>
+          <td><%= prices[i].price %></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+    <% } else { %>
+    <p>No flight rates found for the specified search criteria</p>
+    <% } %>
+  </body>
+</html>
